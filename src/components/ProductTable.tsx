@@ -4,7 +4,7 @@ import { Loader } from "../ui"
 
 type ProductTableProps = {
   loading: boolean;
-  products: TProduct[],
+  products: TProduct[];
 }
 
 export const ProductTable = ({ products, loading }: ProductTableProps) => {
