@@ -12,7 +12,6 @@ export const WatchProduct = () => {
   const fetchData = async () => {
     try {
       const response = await getProductById(id as string)
-      console.log(response)
       setData(response)
     } catch (error) {
       alert('Ошибка загрузки данных');
@@ -21,7 +20,7 @@ export const WatchProduct = () => {
 
   useEffect(() => {
     fetchData()
-  }, [id])
+  }, [])
 
   const confirmDelete = () => {
     deleteProduct(id as string)
